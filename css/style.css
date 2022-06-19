@@ -1,0 +1,194 @@
+.container {
+  margin: 0 auto;
+  max-width: 1249px;
+  padding: 0 20px;
+}
+
+.navbar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.navbar__item {
+  width: 19%;
+}
+.navbar__item a {
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffc600;
+  width: 100%;
+}
+
+.top {
+  margin-top: 20px;
+  position: relative;
+}
+.top__big {
+  background-image: url("../assets/images/taco-main.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 50px;
+}
+.top__big h1, .top__big p {
+  background-color: #ffc600;
+  padding: 5px;
+}
+.top__big h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.top__big p {
+  font-size: 15px;
+  font-weight: 900;
+}
+.top__price {
+  background-color: #ffc600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 188px;
+  margin-bottom: 24px;
+}
+.top__price-price {
+  font-size: 60px;
+  font-weight: 300;
+}
+.top__price-name {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.features {
+  margin-top: 20px;
+}
+.features__item {
+  background-color: #FFF;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.features__item span {
+  font-size: 50px;
+}
+.features__item h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.features__item p {
+  margin: 15px 0;
+  color: #767676;
+  font-weight: 900;
+  font-size: 15px;
+  text-align: center;
+}
+
+.about {
+  margin-top: 20px;
+  padding: 50px;
+  background-color: #FFF;
+}
+.about h2 {
+  font-weight: 700;
+  font-size: 22px;
+}
+.about p {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 900;
+}
+.about button {
+  border: none;
+  background: #ffc600;
+  padding: 10px 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-image: url("../assets/images/bg.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+  margin: 50px;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  color: #272727;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #272727;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #272727;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
