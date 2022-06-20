@@ -12,7 +12,13 @@
     <div class="main">
         <div class="container">
             <div class="navbar">
-                <ul class="navbar__items">
+                <div class="navbar__menu">
+                    <a onclick="mobileNav()"> 
+                        <span id="icon-menu">Menu</span>
+                        <span id="icon-close">Close</span>
+                    </a>
+                </div>
+                <ul class="navbar__items" id="nav-items">
                     <li class="navbar__item">
                         <a href="#">Tacos</a>
                     </li>
@@ -58,28 +64,28 @@
             </div>
             <div class="features">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="features__item">
                             <span>🌮</span>
                             <h3>Tacos</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="features__item">
                             <span>🍺</span>
                             <h3>Beer</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="features__item">
                             <span>🍷</span>
                             <h3>Wine</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="features__item">
                             <span>🎵</span>
                             <h3>Music</h3>
@@ -103,5 +109,22 @@
             </div>
         </div>
     </div>
+    <script>
+        function mobileNav() {
+          const items = document.getElementById("nav-items");
+          const menu =  document.getElementById("icon-menu");
+          const close =  document.getElementById("icon-close");
+          if (items.style.display === "flex") {
+            items.style.display = "none";
+            menu.style.display = "initial";
+            close.style.display = "none";
+          } else {
+            items.style.display = "flex";
+            menu.style.display = "none";
+            close.style.display = "initial";
+    
+          }
+        }
+    </script>
 </body>
 </html>
